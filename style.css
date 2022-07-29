@@ -5,12 +5,13 @@
 
 body {
   font-family: "Oswald", sans-serif;
+  width: 1440px;
+  height: 2486px;
 }
 
 .footer_name {
   padding-right: 80px;
   padding-left: 80px;
-  width: 1440px;
   height: 110px;
   display: flex;
   justify-content: space-between;
@@ -60,4 +61,166 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+}
+
+.middle {
+  height: 632px;
+}
+
+.story {
+  padding-top: 60px;
+  padding-left: 674px;
+  padding-bottom: 60px;
+  padding-right: 675px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.small_image {
+  width: 600px;
+  height: 400px;
+}
+
+.story_img_text {
+  display: flex;
+}
+
+.story_about_coffe {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.blog {
+  height: 711px;
+  background: #efefef;
+}
+
+.general_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 59px;
+  padding-left: 102px;
+  padding-bottom: 65px;
+  padding-right: 103px;
+}
+
+.container {
+  width: 365px;
+  background-color: #ffffff;
+}
+
+.img_blog {
+  width: 325px;
+  height: 216px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  padding-right: 20px;
+}
+
+.name_blog {
+  padding-top: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.name_text_cont {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.text_blog {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 46px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.contact {
+  height: 337px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #817070;
+}
+.subscribe {
+  margin-top: 60px;
+  margin-bottom: 28px;
+  margin-left: 640px;
+  margin-right: 639px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.email {
+  width: 300px;
+  height: 55px;
+  background: #817070;
+  border: 3px solid #ffffff;
+}
+
+::placeholder {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button {
+  width: 129px;
+  height: 55px;
+  margin-top: 28px;
+  margin-bottom: 58px;
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #817070;
+}
+
+.footer {
+  height: 72px;
+  margin-top: 29px;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
