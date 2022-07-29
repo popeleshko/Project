@@ -1,18 +1,41 @@
-* {
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   font-family: "Oswald", sans-serif;
-  width: 1440px;
-  height: 2486px;
 }
 
 .footer_name {
-  padding-right: 80px;
-  padding-left: 80px;
-  height: 110px;
+  margin: 0 auto;
+  margin-left: 80px;
+  margin-right: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +63,6 @@ body {
 
 .name {
   width: 204px;
-  height: 53px;
   padding-top: 29px;
   padding-bottom: 28px;
   font-style: normal;
@@ -53,18 +75,41 @@ body {
 }
 
 .img_text {
-  display: flex;
 }
 
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.text_image {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 89px;
+  text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text_image_pure_batton {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.pure_batton {
+  margin-right: 673px;
+  margin-left: 679px;
+  width: 80px;
+  height: 10px;
+  border: 3px solid #817070;
+  background: #817070;
 }
 
 .middle {
   height: 632px;
+}
+
+.story_img_text {
+  display: flex;
+  justify-content: center;
 }
 
 .story {
@@ -82,15 +127,14 @@ body {
 }
 
 .small_image {
+  padding-left: 80px;
+  padding-right: 40px;
   width: 600px;
   height: 400px;
 }
 
-.story_img_text {
-  display: flex;
-}
-
 .story_about_coffe {
+  padding-right: 123px;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -170,12 +214,12 @@ body {
   margin-bottom: 28px;
   margin-left: 640px;
   margin-right: 639px;
-  font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 53px;
   text-align: center;
   text-transform: uppercase;
+
   color: #ffffff;
 }
 
