@@ -9,7 +9,7 @@ function addToDo(text) {
     id: `${Math.random()}`,
   };
 
-  arr_toDo.push(text);
+  arr_toDo.push(todo);
 }
 
 function updateTodo() {
