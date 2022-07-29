@@ -1,10 +1,10 @@
 let arr_toDo = [];
-const inputText = document.querySelector(".input-js");
-const buttonAdd = document.querySelector(".button");
+// const inputText = document.querySelector(".input-js");
+// const buttonAdd = document.querySelector(".button");
 
 function addToDo(text) {
   const todo = {
-    text: "",
+    text,
     status: false,
     id: `${Math.random()}`,
   };
@@ -12,6 +12,12 @@ function addToDo(text) {
   arr_toDo.push(todo);
 }
 
+function deleteToDo(id) {}
+arr_toDo.forEach((todo) => {
+  if (todo.id === id) {
+    todo.status = true;
+  }
+});
 function updateTodo() {
   console.log(arr_toDo);
 }
