@@ -1,6 +1,6 @@
 let arr_toDo = [];
 // const inputText = document.querySelector(".input-js");
-// const buttonAdd = document.querySelector(".button");
+// const buttonAdd = document.querySelector(".btn");
 
 function addToDo(text) {
   const todo = {
