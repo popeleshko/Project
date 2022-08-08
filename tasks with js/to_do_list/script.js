@@ -1,7 +1,7 @@
 const arrTodo = []; //создаем массив
 const inputTodo = document.querySelector(".input"); //ввод задания
 const btn = document.querySelector(".btn"); //кнопка
-const outputTodo = document.querySelector(".output__ul"); //вывод списка на странице
+const outputTodo = document.querySelector(".output__form"); //вывод списка на странице
 
 function addTodo(text) {
   //добавляем функцию добавления нового задания с параметром text
@@ -32,8 +32,8 @@ function output() {
     if (todo.status) {
       return;
     }
-    value += `<li>${todo.text}
-    <button data-id='${todo.id}'>Сделано</button></li>`;
+    value += `<li><div class="chk__txt"><input type="checkbox"><span class="text">${todo.text}</span></div>
+    <button class="btn__li" data-id='${todo.id}'>Сделано</button></li>`;
   });
   outputTodo.innerHTML = value; // выводим в наш ul - li
 }
@@ -43,6 +43,17 @@ btn.addEventListener("click", () => {
   const text = inputTodo.value;
   addTodo(text);
   output();
+  inputTodo.value = "";
+});
+
+inputTodo.addEventListener("keypress", (event) => {
+  //тоже самое что и предыдущее, только по нажатию на enter
+  if (event.key === "Enter") {
+    const text = inputTodo.value;
+    addTodo(text);
+    output();
+    inputTodo.value = "";
+  }
 });
 
 outputTodo.addEventListener("click", (event) => {
@@ -55,4 +66,4 @@ outputTodo.addEventListener("click", (event) => {
   output();
 });
 
-/* 1. нужно вместо или вместе с li делать checkbox; 2. Сделать кнопку удаления всех заданий сразу; 3. Сделать красивые стили. */
+/* 1. нужно вместо или вместе с li делать checkbox - готово; 2. Сделать кнопку удаления всех заданий сразу; 3. Сделать красивые стили. */
